@@ -1,20 +1,90 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🍷 La Tavola — L'Art de Vivre
 
-# Run and deploy your AI Studio app
+An elegant restaurant website built with **Angular 21** and **Tailwind CSS**, featuring a refined UI with smooth animations, lazy-loaded pages, and a responsive design.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/drive/138Z-W2pVJOGCUMdAiVleRqyGfWMyZq0a
+## ✨ Features
 
-## Run Locally
+- **Home** — Immersive landing page with splash screen and scroll-driven animations
+- **Menu** — Dynamic menu with category filtering
+- **Gallery** — Visual showcase of dishes and ambiance
+- **Reservation** — Online booking form
+- **Responsive Design** — Fully optimized for mobile, tablet, and desktop
+- **Lazy Loading** — Route-level code splitting for fast initial load
 
-**Prerequisites:**  Node.js
+---
 
+## 🛠 Tech Stack
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+| Layer | Technology |
+|-------|------------|
+| Framework | Angular 21 (Standalone Components) |
+| Styling | Tailwind CSS |
+| Language | TypeScript 5.8 |
+| Build Tool | Vite |
+| Routing | Angular Router (lazy-loaded) |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18+)
+- npm
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/la-tavola.git
+cd la-tavola
+
+# Install dependencies
+npm install
+```
+
+### Development
+
+```bash
+npm run dev
+```
+
+The app will be served at `http://localhost:4200`.
+
+### Production Build
+
+```bash
+npm run build
+```
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── app.component.ts          # Root component with navigation & splash screen
+├── app.routes.ts             # Route definitions (lazy-loaded)
+├── components/ui/            # Reusable UI components (Button, SectionTitle)
+├── directives/               # Custom directives (scroll appear)
+├── pages/
+│   ├── home/                 # Home page
+│   ├── menu/                 # Menu page
+│   ├── gallery/              # Gallery page
+│   └── reservation/          # Reservation page
+└── services/                 # Data services (menu items)
+```
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
